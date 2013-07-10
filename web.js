@@ -3,7 +3,7 @@ require ('fs');
 var express = require('express');
 
 var app = express.createServer(express.logger());
-
+var fs = new fs();
 var buffer = fs.readFile('index.html', function(err, data){
 	if(err) throw err;
        });
